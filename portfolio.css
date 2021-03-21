@@ -1,0 +1,195 @@
+#intro {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body , html {
+  min-height: 100%;
+  margin: 0;
+  background: url("img/skulls.png");
+  list-style: none;
+  transition-duration: 500ms;
+  transition-property: filter;
+}
+#darkmode {
+  width: 100%;
+  height: 100%;
+}
+@keyframes s {
+  0% {
+    content: "BOUALLAM Omar's Portfilio";
+  }
+  50% {
+    color: #acad9c;
+  }
+  100% {
+    content: "F42491 4y0u8'5 P027f0110";
+  }
+}
+
+#hdname {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#hdname::after {
+  content: "BOUALLAM Omar's Portfilio";
+  animation: s 6s linear infinite alternate;
+}
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1px;
+  height: 100px;
+  color: black;
+}
+#list {
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#itemlist1 {
+  display: inline-block;
+  margin-right: auto;
+}
+#itemlists {
+  display: inline-block;
+}
+
+p{
+  font-family: 'Kreon', serif !important;
+}
+/* h1{
+  font-family: 'Imbue', serif !important;
+} */
+
+
+#dmode {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  border-style: solid;
+  text-align: center;
+  background: -webkit-linear-gradient(180deg, #cfcbc446 50%, #0000006b 50%);
+  color: black;
+}
+
+#logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  transition-property: filter;
+  transition-duration: 200ms;
+}
+
+#logo:hover {
+  filter: drop-shadow(8px 8px 5px gray);
+}
+
+#body {
+  width: 100%;
+  height: 100%;
+  transition-duration: 500ms;
+  transition-property: filter;
+}
+
+#aboutme {
+  width: 60%;
+}
+
+p {
+  font-family: "Josefin Slab", serif;
+  font-size: 30px;
+}
+
+#contactme {
+  display: inline-block;
+}
+
+@media screen and (max-width: 650px) {
+  #itemlist {
+    display: none;
+  }
+  /* #contactme {
+    display: inline-block;
+  } */
+}
+
+#projects {
+  width: 60%;
+  position: relative;
+  overflow: hidden;
+
+}
+#project {
+  display: block;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: none;
+  transition-duration: 300ms;
+  transition-property: all;
+  color: black;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+#project:hover + #line {
+  transform: translateX(+100%);
+}
+#line
+{
+  width: 100%;
+  position: absolute;
+  height: 5px;
+  background-color: #626466;
+  left: -100%;
+  transition-duration: 300ms;
+  transition-property: transform;
+
+}
+#itemlistd
+{
+  margin: 0;
+  width: 90px;
+  height: 30px;
+  position: relative;
+
+}
+#toggle
+{
+  width: 75px;
+  height: 30px;
+  background-color:#acad9c;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  outline-style: none;
+  -webkit-appearance: none;
+  transition: all 400ms ease;
+}
+#ball
+{
+  background-color: #acad9c;
+  background-size: 25px 25px;
+  background-image: url(./img/sun.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 30px;
+  pointer-events: none;
+  height: 30px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  margin-top: 3px;
+  box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 200ms ease-in-out;
+}
